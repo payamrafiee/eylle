@@ -57,12 +57,10 @@ if uploaded_file is not None and OPENAI_API_KEY and analyze_button:
     
         # Optimized prompt for additional clarity and detail
         prompt_text = (
-            "You are a highly knowledgeable scientific image analysis expert. "
+            "You are a highly knowledgeable ophthalmologist expert. "
             "Your task is to examine and diagnosis the disease may have the following image in detail. "
-            "Provide a comprehensive, factual, and scientifically accurate explanation of what the image depicts. "
+            "Provide a comprehensive, factual, and scientifically accurate explanation of what the image "
             "Highlight key elements and their significance, and present your analysis in clear, well-structured markdown format. "
-            "If applicable, include any relevant scientific terminology to enhance the explanation. "
-            "Assume the reader has a basic understanding of scientific concepts."
             "Create a detailed image caption in bold explaining in short."
             "If user asked about which eye is this, righ or left politly reply I could not identify."
         )
