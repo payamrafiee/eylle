@@ -21,7 +21,7 @@ def encode_image(image_file):
 
 st.set_page_config(page_title="Ophthalmology Image Analyst", initial_sidebar_state="collapsed")
 # Streamlit page setup
-st.title("Ask your ophthalmologggy question, AI will assist you")
+st.title("Ask your ophthalmology question, AI will assist you")
 
 
 # Initialize the OpenAI client with the API key
