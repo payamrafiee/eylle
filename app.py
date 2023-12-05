@@ -18,18 +18,18 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 def encode_image(image_file):
     return base64.b64encode(image_file.getvalue()).decode("utf-8")
 
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.set_page_config(page_title="Ophthalmology Image Analyst", initial_sidebar_state="collapsed")
 # Streamlit page setup
 st.title("Ask your ophthalmology question, AI will assist you")
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {display: none;}
+            footer {display: none;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Initialize the OpenAI client with the API key
 client = OpenAI(api_key=OPENAI_API_KEY)
