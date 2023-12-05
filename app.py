@@ -25,8 +25,8 @@ st.title("Ask your ophthalmology question, AI will assist you")
 
 hide_streamlit_style = """
             <style>
-            #MainMenu {display: none;}
-            footer {display: none;}
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
